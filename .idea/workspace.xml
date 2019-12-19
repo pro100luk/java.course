@@ -1,16 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a20bc6a3-fa4e-4020-81e9-9e7a514f478f" name="Default Changelist" comment="" />
+    <list default="true" id="a20bc6a3-fa4e-4020-81e9-9e7a514f478f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/WEBAPP/WEB-INF/common/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/WEBAPP/WEB-INF/common/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/WEBAPP/WEB-INF/main.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/WEBAPP/oops.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/px/commands/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/px/commands/LoginCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/WEBAPP/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/WEBAPP/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/px/MainServletController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/px/MainServletController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellias/px/MainServletController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/intellias/px/MainServletController.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML4 File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1UusMFgya4cVA4TadrmCRB1BbU9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/WEBAPP" />
+    <property name="DefaultHtmlFileTemplate" value="HTML4 File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/WEBAPP/WEB-INF/common" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lpylyp\Desktop\java_course\ProjectX\src\main\WEBAPP\WEB-INF\common" />
+      <recent name="C:\Users\lpylyp\Desktop\java_course\ProjectX\src\main\WEBAPP" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -28,7 +68,7 @@
     <configuration name="Unnamed" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
       <option name="DOC_BASE" value="C:\Users\lpylyp\Desktop\java_course\ProjectX\src\main\WEBAPP" />
       <option name="DOC_MODULE_ROOT" value="" />
-      <option name="CONTEXT_PATH" value="/com.intellias.intems" />
+      <option name="CONTEXT_PATH" value="/ProjectX" />
       <option name="TOMCAT_PORT" value="8080" />
       <option name="AJP_PORT" value="8009" />
       <option name="ADMIN_PORT" value="8005" />
@@ -63,5 +103,19 @@
       <updated>1576217764580</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.jsp" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
