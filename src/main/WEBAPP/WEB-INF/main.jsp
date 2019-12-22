@@ -4,7 +4,24 @@
 </jsp:include>
 
 <div>
-    Hello ${user}!
+
+    <c:if test="${user !=null}">
+        Hello ${user}!
+    </c:if>
+    <c:if test="${user !=null}">
+        Login button
+    </c:if>
+
+
+
+
+
+    <form action="${pageContext.request.contextPath}/controller">
+        <input name="command" type="hidden">
+        <input name="login" type="text">
+        <input name="password" type="password">
+        <input type="submit" value="login">
+    </form>
 </div>
 
 </body>
