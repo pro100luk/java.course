@@ -1,7 +1,9 @@
 package com.intellias.px.entitites;
 
-import java.util.Objects;
+import lombok.Builder;
 
+import java.util.Objects;
+@Builder
 public class User {
 
 

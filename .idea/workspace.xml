@@ -7,18 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a20bc6a3-fa4e-4020-81e9-9e7a514f478f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/px/PXConnectionPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/px/entitites/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/px/entitites/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/px/entitites/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/px/dao/Dao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/px/dao/DaoFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/px/dao/H2UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/intellias/px/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/WEBAPP/WEB-INF/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/WEBAPP/WEB-INF/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/WEBAPP/oops.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/WEBAPP/oops.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/px/pgjdbc/JdbcProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/px/pgjdbc/JdbcProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/px/PXConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/px/PXConnectionPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/px/commands/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/px/commands/LoginCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/intellias/px/entitites/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/intellias/px/entitites/User.java" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,10 +39,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="HTML4 File" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -89,15 +87,30 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\lpylyp\Desktop\java_course\ProjectX\src\main\WEBAPP" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.intellias.px.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\lpylyp\Desktop\java_course\ProjectX\src\main\WEBAPP\WEB-INF\common" />
       <recent name="C:\Users\lpylyp\Desktop\java_course\ProjectX\src\main\WEBAPP" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lpylyp\Desktop\java_course\ProjectX\src\main\WEBAPP" />
+    </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Run ProjectX">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.JdbcProgram">
     <configuration name="JdbcProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.intellias.px.pgjdbc.JdbcProgram" />
       <module name="ProjectX" />
@@ -183,19 +196,27 @@
         </option>
       </method>
     </configuration>
-    <configuration name="Unnamed" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY" show_console_on_std_err="false" show_console_on_std_out="false">
-      <option name="adminPort" />
-      <option name="ajpPort" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="contextPath" />
-      <option name="customContext" />
-      <option name="docBase" />
-      <option name="envOptions" />
-      <option name="moduleName" />
-      <option name="passParentEnvironmentVariables" value="true" />
-      <option name="port" />
-      <option name="tomcatInfo" />
-      <option name="vmOptions" />
+    <configuration name="Unnamed" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
+      <option name="DOC_BASE" value="" />
+      <option name="DOC_MODULE_ROOT" value="" />
+      <option name="CONTEXT_PATH" value="" />
+      <option name="TOMCAT_PORT" value="" />
+      <option name="AJP_PORT" value="" />
+      <option name="ADMIN_PORT" value="" />
+      <option name="VM_OPTIONS" value="" />
+      <option name="PASS_PARENT_ENV_OPTIONS" value="false" />
+      <option name="CLASS_NAME" value="" />
+      <option name="DEBUG" value="" />
+      <option name="DIGEST" value="" />
+      <option name="ROLE_NAME_COL" value="" />
+      <option name="USER_CRED_COL" value="" />
+      <option name="USER_NAME_COL" value="" />
+      <option name="USER_ROLE_TABLE" value="" />
+      <option name="USER_TABLE" value="" />
+      <option name="JNDI_GLOBAL" value="" />
+      <option name="JNDI_NAME" value="" />
+      <option name="JNDI_TYPE" value="" />
+      <option name="DATA_SOURCE_NAME" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -203,31 +224,12 @@
     <list>
       <item itemvalue="Application.JdbcProgram" />
       <item itemvalue="Smart Tomcat.Unnamed" />
-      <item itemvalue="Tomcat Server.Run ProjectX" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.JdbcProgram" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <option name="contentProportion" value="0.18477044" />
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -244,7 +246,7 @@
       <workItem from="1577049066816" duration="701000" />
       <workItem from="1577051053523" duration="2551000" />
       <workItem from="1577055183361" duration="6157000" />
-      <workItem from="1577177484333" duration="2769000" />
+      <workItem from="1577177484333" duration="8901000" />
     </task>
     <task id="LOCAL-00001" summary="commit #2">
       <created>1577049138675</created>
@@ -253,7 +255,21 @@
       <option name="project" value="LOCAL" />
       <updated>1577049138675</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit #2">
+      <created>1577367206897</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577367206897</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commit #3">
+      <created>1577367315120</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577367315120</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +293,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit #2" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit #2" />
+    <MESSAGE value="commit #3" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit #3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="970" y="174" width="816" height="679" key="#Custom_Plugin_Repositories" timestamp="1577177324369">
@@ -304,15 +321,16 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="691" y="343" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1577054878336" />
-    <state x="2685" y="250" key="#com.intellij.ide.util.MemberChooser" timestamp="1577177000701">
-      <screen x="1920" y="0" width="1858" height="1080" />
+    <state x="765" y="250" key="#com.intellij.ide.util.MemberChooser" timestamp="1577434954168">
+      <screen x="0" y="0" width="1858" height="1080" />
     </state>
+    <state x="765" y="250" key="#com.intellij.ide.util.MemberChooser/0.0.1858.1080@0.0.1858.1080" timestamp="1577434954168" />
     <state x="2685" y="250" key="#com.intellij.ide.util.MemberChooser/1920.0.1858.1080/0.0.1858.1080@1920.0.1858.1080" timestamp="1577177000701" />
-    <state x="554" y="135" key="CommitChangelistDialog2" timestamp="1577367204011">
+    <state x="554" y="135" key="CommitChangelistDialog2" timestamp="1577367312658">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="554" y="135" key="CommitChangelistDialog2/0.0.1858.1080@0.0.1858.1080" timestamp="1577049136260" />
-    <state x="554" y="135" key="CommitChangelistDialog2/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1577367204011" />
+    <state x="554" y="135" key="CommitChangelistDialog2/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1577367312658" />
     <state x="2629" y="295" key="FileChooserDialogImpl" timestamp="1577177455011">
       <screen x="1920" y="0" width="1858" height="1080" />
     </state>
@@ -387,6 +405,10 @@
     </state>
     <state x="430" y="183" key="SettingsEditor/0.0.1858.1080@0.0.1858.1080" timestamp="1576792061679" />
     <state x="2008" y="135" key="SettingsEditor/1920.0.1858.1080/0.0.1858.1080@1920.0.1858.1080" timestamp="1577177846606" />
+    <state x="521" y="273" key="Vcs.Push.Dialog.v2" timestamp="1577367454673">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="521" y="273" key="Vcs.Push.Dialog.v2/1920.0.1858.1080/0.0.1858.1080@0.0.1858.1080" timestamp="1577367454673" />
     <state x="787" y="287" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1576832603469">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>

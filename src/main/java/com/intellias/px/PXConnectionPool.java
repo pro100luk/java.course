@@ -18,7 +18,7 @@ public final class PXConnectionPool {
         return instance;
     }
 
-    public Connection getCpnnection() throws SQLException {
+    public Connection getConnection() throws SQLException {
         return DriverManager.getConnection("jdbc:h2:~/project-x-db");
     }
 
