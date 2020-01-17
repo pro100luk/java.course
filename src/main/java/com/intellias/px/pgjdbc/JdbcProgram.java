@@ -41,7 +41,7 @@ public class JdbcProgram {
                 preparedStatement.setInt(1,2);
                 preparedStatement.setString(2,"anbed"+i);
                 preparedStatement.setString(3, "qwerty");
-                int updatedCount = statement.executeUpdate("create table users (id integer , name varchar (255),password)")
+                int updatedCount = statement.executeUpdate("create table users (id integer , name varchar (255),password)");
                 System.out.println("Updated: " + updatedCount);
             }
 

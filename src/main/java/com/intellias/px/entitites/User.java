@@ -5,9 +5,8 @@ import lombok.Builder;
 import java.util.Objects;
 @Builder
 public class User {
-
-
     private int id;
+    private String login;
     private String name;
     private String password;
 

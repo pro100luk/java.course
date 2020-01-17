@@ -11,7 +11,7 @@ public enum Status {
     IN_DELIVERY(4660),
     DELIVERED(50);
 
-    private static final Map<Integer,Status> statusCodeToStatus;
+    private static final Map<Integer, Status> statusCodeToStatus;
 
     private final int statusCode;
 
@@ -23,6 +23,7 @@ public enum Status {
         return statusCode;
     }
 
-    public Status fromStatusCOde(int statusCode){
+    public Status fromStatusCOde(int statusCode) {
         return statusCodeToStatus.get(statusCode);
+    }
 }

@@ -1,5 +1,6 @@
 package com.intellias.px.commands;
 
+import com.intellias.px.annotations.CommandId;
 import com.intellias.px.dao.DaoFactory;
 import com.intellias.px.dao.UserDao;
 
@@ -7,6 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+//@CommandId(value = "login", description = "It's login command", alternativeIds = {"loginCommand", "myLoginCommand"})
+@CommandId(value = "login")
 public class LoginCommand implements Command {
 
     private final DaoFactory daoFactory;
